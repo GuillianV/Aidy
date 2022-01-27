@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>{{ projectName }}</title>
+    <script src="static/js/vue.js"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+
+        <div class="header-menu">
+            <a href="/">
+                <div id="header-title">
+                    {{ projectName }}
+                </div>
+            </a>
+            
+            <div id="header-btn" class="blue-btn">
+                SE CONNECTER
+            </div>
+        </div>
+    
+        <img id="header-img" src="static/img/wave-haikei.svg">
+    </header>
+
+    <section class="offre">
+        <h1>Je souhaite aider</h1>
+
+        <h2>Comment faire ?</h2>
+        <p>
+            Afin de garantir un service sécurisé et de qualité, Aidy demande une pièce d’identité ainsi qu’une photo.    
+        </p>
+
+        <h2>Inscription</h2>
+
+        <div class="form">
+            <h2>Informations</h2>
+
+            <div class="info1">
+                <div class="avatar">+</div>
+
+                <div class="info1-input">
+                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Prénom">
+                </div>
+            </div>
+
+            <input type="text" class="ddn" placeholder="Date de naissance">
+
+            <div class="city-flex">
+                <input type="text" class="input-city" placeholder="Ville">
+                <input type="text" class="input-code" placeholder="Code Postal">
+            </div>
+
+            <h2 class="description">Parlez nous un peu de vous</h2>
+
+            <div class="city-flex">
+                <input type="text" class="input-description">
+            </div>
+
+            <h2 class="description">Compétences</h2>
+            <h3>Listez vos compétences en spérant avec des virgules</h3>
+
+            <div class="city-flex">
+                <input type="text" class="input-description">
+            </div>
+
+            <h2 class="description">Justificatif d'identité</h2>
+            <div class="pi">
+                <h3>Pièce d'identité</h3>
+                <div class="blue-btn">
+                    SELECTIONNER
+                </div>
+            </div>
+
+            <div class="blue-btn inscription">
+                S'INSCRIRE
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h1>{{ projectName }}</h1>
+    </footer>
+</body>
+</html>
+
+<script>
+    const head = Vue.createApp({
+        data(){
+            return{
+
+                projectName :"<%= name %>",
+
+            }
+        }
+    })
+
+    head.mount(document.querySelector("head"));
+
+
+
+
+    const body = Vue.createApp({
+        data(){
+            return{
+
+                projectName :"<%= name %>",
+
+            }
+        }
+    })
+
+    body.mount(document.querySelector("body"));
+
+
+</script>

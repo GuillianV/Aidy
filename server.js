@@ -11,6 +11,14 @@ app.get('/', (req, res) => {
     res.render(__dirname + "/views" + '/index', {name: process.env.PROJECT_NAME});
 });
 
+app.get('/offre', (req, res) => {
+    res.render(__dirname + "/views" + '/offre', {name: process.env.PROJECT_NAME});
+});
+
+app.get('/demande', (req, res) => {
+    res.render(__dirname + "/views" + '/demande', {name: process.env.PROJECT_NAME});
+});
+
 app.listen(port, () => {
     console.log(`Server is up at port ${port}`);
 });
