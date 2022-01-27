@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --pink: #FF6174;
+    --red: #DE5364;
+    --blue:#61D9FF;
+    --lightBlue:#87DBF5;
+    --dark:#341519;
+
+    --border-small :5px;
+}
+
+@font-face {
+    font-family: "barlow-bold";
+    src: url("../font/Barlow-Bold.ttf")
+}
+
+@font-face {
+    font-family: "barlow-medium";
+    src: url("../font/Barlow-Medium.ttf")
+}
+
+@font-face {
+    font-family: "barlow-light";
+    src: url("../font/Barlow-Light.ttf")
+}
+
+@font-face {
+    font-family: "lambretta";
+    src: url("../font/Lambretta.otf")
+}
+
+header{
+    background: var(--pink);
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    z-index: 10;
+}
+#header-img{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    height: 10vh;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#header-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    font-family: lambretta;
+    font-size: 5vw;
+    z-index: 5;
+    color: white;
+}
+
+.blue-btn{
+    background-color: var(--blue);
+    border-radius: var(--border-small);
+    box-shadow: 0 6px 20px rgba(0,0,0,.25);
+    font-family: barlow-bold;
+    padding: 2vw 8vw 2vw 8vw;
+    text-transform: uppercase;
+    size: 38px;
+    color: white;
+    cursor: pointer;
+}
+
+#header-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2%;
+    z-index: 5;
+
+}
