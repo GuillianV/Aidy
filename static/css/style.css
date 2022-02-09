@@ -213,7 +213,7 @@ p {
 
 .savoir-plus-flex {
     flex: 1;
-    margin: 10px;
+    margin: 50px;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -475,4 +475,10 @@ footer h1 {
     margin-bottom: 120px;
     background-color: var(--pink);
     text-align: center;
+}
+
+.bookContainer {
+    text-align: center;
+    width: 100%;
+    margin: 40px;
 }
